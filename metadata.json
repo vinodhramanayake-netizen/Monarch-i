@@ -1,0 +1,6 @@
+{
+  "name": "Monarch Imperial",
+  "description": "Luxury hospitality, fine dining, royal weddings, and bespoke events in Sri Jayawardenepura Kotte, Sri Lanka.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

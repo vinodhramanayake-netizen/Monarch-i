@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import "@fontsource/playfair-display/400.css";
+@import "@fontsource/playfair-display/600.css";
+@import "@fontsource/plus-jakarta-sans/400.css";
+@import "@fontsource/plus-jakarta-sans/500.css";
+@import "@fontsource/plus-jakarta-sans/600.css";
+
+@layer base {
+  :root {
+    --canvas: #f8f7f2;
+    --ink: #252923;
+    --muted: #626559;
+    --inverse: #f3f0e8;
+    --champagne: #e4cea0;
+    --gold-ink: #725b38;
+    --gold-gradient: linear-gradient(90deg, #b5985a 0%, #9c7522 100%);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--canvas);
+    color: var(--ink);
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    width: 100%;
+    overflow-x: clip;
+    background-color: var(--canvas);
+    color: var(--ink);
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid #b5985a;
+    outline-offset: 3px;
+  }
+}
+
+.font-display {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.font-sans-body {
+  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(90deg, #b5985a 0%, #9c7522 100%);
+}
+
+.bg-gold-gradient:hover {
+  background: linear-gradient(90deg, #c2a566 0%, #a9812b 100%);
+}
+
+.footer-wordmark-gradient {
+  background-image: linear-gradient(180deg, #725b38 0%, rgba(181, 152, 90, 0.22) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
